@@ -1,0 +1,146 @@
+body{
+    background-color: #9BA4B5;
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    filter:grayscale() ;
+   
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+    
+}
+#navbar img{
+    height: 50px;
+}
+#navbar ul{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+#navbar li{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: rgb(255, 255, 255);
+}
+#notepad{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 3% 3%;
+    padding: 0%;
+}
+#pad{
+    box-shadow: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #F1F6F9;
+    border-radius: 20px;
+    min-width: 400px;
+    width: 25%;
+    min-height: 600px;
+    border: 4px solid;
+    overflow: hidden;
+}
+#pad .heading{
+    background-color: #394867;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    border-bottom: 5px solid black;
+    
+}
+#pad h1{
+    font-size: 30px;
+    color: white;
+    margin: 13px;
+    font-family: 'Work Sans', sans-serif;
+}
+.input{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+    
+}
+form{
+    width: 100%;
+    height: 45px;
+}
+
+#input{
+    border: 3px solid black;
+  color: black;
+    border-radius: 25px;
+  height: 100%;
+  width: 80%;
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+#input::placeholder{
+    color: #9BA4B5;
+    font-weight: 900;
+}
+
+
+.input button{
+    color: white;
+    background-color: #212A3E;
+    border: 3px solid black; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.input button:hover{
+    transform: translate(-2px,-2px);
+}
+
+button-active {
+    color: black;
+    background-color: #EB7A53;
+}
+.worklist{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#list{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+    margin-left: 10px;
+    justify-content: flex-start;
+    /* border-bottom: 2px solid gray; */
+    font-family: 'Gochi Hand', cursive;
+}
+input[type=checkbox]:checked + label {
+    color:#394867;
+    text-decoration: line-through;
+  }
+.cbox4 {
+    font-size: 5em;
+    color:red;
+    text-decoration: line-through;
+    
+  }
