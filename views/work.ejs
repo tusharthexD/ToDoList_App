@@ -5,10 +5,20 @@
     <div class="heading"><h1>Work List</h1></div>
     <form action="/work" method="post" class="input"><input type="text" name="List" id="input" placeholder="New item" required>
         <button value="submit" >+</button></form> 
-    <div class="worklist"><% for(var i =0; i < list.length ; i++) {%>
-   <div id="list"><input type="checkbox" class="cbox4" value="fourth_checkbox"> <label for="cbox4"><%= list[i]  %></label></div><hr>
-    <% } %></div>
-</div>
+
+    
+        <div class="worklist">
+    
+
+            <%if(list.length>=16){for(var i =list.length-15; i < list.length ; i++) {%>
+             <div id="list"><input type="checkbox" class="cbox4" value="fourth_checkbox"> <label for="cbox4"><%= list[i]  %></label></div>
+             <% }} else{for(var i =0; i < list.length ; i++) {%>
+           <div id="list"><input type="checkbox" class="cbox4" value="fourth_checkbox"> <label for="cbox4"><%= list[i]  %></label></div>
+            <% }} %></div>
+        
+        
+        
+        </div>
 </section>
 
 <%- include('../parties/footer.ejs') %>
